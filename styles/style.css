@@ -16,7 +16,6 @@ h1, h2, h3, h4, h5, h6 {
 header {
     background-color:rgb(100, 154, 236);
     padding: 40px 0;
-    text-align: center;
 }
 main {
     background-color:rgb(158, 184, 230);
@@ -35,9 +34,43 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li:hover a {
+    background-color: rgb(56, 224, 22);
+    color: white;
+    
+}
+
+nav > ul {
+    position: relative;
+}
+
+ul.dropdown {
+    display: none;
+    position: absolute;
+    top: 36px;
+    padding: 0;
+}
+
+ul.dropdown li {
+    padding-top: 0;
+    /* padding-right: 20px; */
+    /* padding-bottom: 20px; */
+    /* padding-left: 20px; */
+}
+
+nav > ul > li:hover > ul {
+    display: block;
+    list-style: none;
+    width: 134px;
+}
+
+nav > ul > li:hover > ul a {
+    display: block;
+    padding: 10px 20px;
+}
+
 .section-title {
     text-align: center;
-    padding: 20px 10px;
 }
 
 .blog {
